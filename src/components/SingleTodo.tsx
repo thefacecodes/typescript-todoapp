@@ -34,7 +34,7 @@ const SingleTodo = ({todo, todos, setTodo, setTodos, index}:Props) => {
           {edit && !todo.completed ? <EditTodo todo={todo} todos={todos} setTodo={setTodo} setTodos={setTodos} edit={edit} setEdit={setEdit} /> : <p>{index + 1}. &nbsp; {todo.todo}</p>}
 
           <div className="buttons">
-            <button onClick={() => setEdit(true)}><AiFillEdit /></button>
+            {!todo.completed && <button onClick={() => setEdit(true)}><AiFillEdit /></button>}
             <button onClick={() => deleteTodo(todo)}><AiFillDelete /></button>
           </div>
     </div>
