@@ -10,7 +10,12 @@
 - TypeScript
 - Tailwind CSS
 
-# Getting Started with Create React App
+#### Web version
+
+- Visit [LIVE](https://theface-tstodoapp.vercel.app)
+
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
