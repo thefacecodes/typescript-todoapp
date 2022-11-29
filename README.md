@@ -1,3 +1,15 @@
+# Todo-App With TypeScript and React JS
+
+## Screenshot
+
+![](./src/assets/screenshot.png)
+
+### Built with
+
+- React JS
+- TypeScript
+- Tailwind CSS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
