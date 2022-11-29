@@ -11,7 +11,7 @@ const AddTask = ({todo, setTodo, addTodo}:Props) => {
     
       return (
             <form onSubmit={addTodo}>
-                <input placeholder='Enter to-do...' required type="text" name="todo" id="todo" value={todo} onChange={(e) => setTodo(e.target.value)} />
+                <input placeholder='Enter to-do...' autoComplete='off' required type="text" name="todo" id="todo" value={todo} onChange={(e) => setTodo(e.target.value)} />
                 <button type="submit">Add</button>
             </form>
 
