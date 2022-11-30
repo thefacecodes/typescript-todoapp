@@ -10,7 +10,7 @@
 - TypeScript
 - Tailwind CSS
 
-#### Web version
+### Web version
 
 - Visit [LIVE](https://theface-tstodoapp.vercel.app)
 

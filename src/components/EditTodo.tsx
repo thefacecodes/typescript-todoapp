@@ -21,7 +21,7 @@ const EditTodo = ({todo, todos, setTodo, setTodos, edit, setEdit}:Props) => {
 
   return (
     <form onSubmit={editTodo} className="edit">
-    <input type="text" autoFocus name="todo" id="todo" value={todo.todo} onChange={(e) => setTodos(todos.map(each => each.id === todo.id ? {
+    <input type="text" autoComplete="off" autoFocus name="todo" id="todo" value={todo.todo} onChange={(e) => setTodos(todos.map(each => each.id === todo.id ? {
   ...todo, todo: e.target.value
 }:each))} />
   </form>
