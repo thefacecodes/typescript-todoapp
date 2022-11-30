@@ -14,13 +14,15 @@ function App() {
 
   
   useEffect(() => {
+      localStorage.setItem("todos", JSON.stringify(todos))
+  },[todos])
+
+  useEffect(() => {
     const saved = localStorage.getItem("todos")
     if(saved) {
       setTodos(JSON.parse(saved))        
-    } else {
-      localStorage.setItem("todos", JSON.stringify(todos))
-    }
-  },[])
+    } 
+  }, [])
 
 
 
