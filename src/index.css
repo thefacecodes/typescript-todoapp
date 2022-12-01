@@ -54,7 +54,7 @@ body {
 }
 
 form.edit {
-  @apply h-full bg-gray-300 m-0 rounded
+  @apply h-full w-full bg-gray-300 m-0 rounded
 }
 
 p.credit {
