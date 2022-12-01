@@ -17,11 +17,11 @@ const SingleTodo = ({todo, todos, setTodo, setTodos, index}:Props) => {
     
   const markCompleted = (e: React.MouseEvent<HTMLElement>, todo: Todo) => {
     const thediv = e.currentTarget
-    thediv.classList.toggle("completed")
     setTodos(todos.map(each => each.id === todo.id ? {
       ...todo, completed: !todo.completed
     } :
       each))
+      todo.completed ? thediv.classList.add("completed") : thediv.classList.remove("completed")
   }
 
   
