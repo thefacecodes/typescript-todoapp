@@ -12,17 +12,19 @@ function App() {
   const [todo, setTodo] = useState<string>("")
   const [todos, setTodos] = useState<Todo[]>([])
 
-  
-  useEffect(() => {
-      localStorage.setItem("todos", JSON.stringify(todos))
-  },[todos])
-
   useEffect(() => {
     const saved = localStorage.getItem("todos")
     if(saved) {
       setTodos(JSON.parse(saved))        
     } 
   }, [])
+  
+  useEffect(() => {
+    if(todos.length > 0) {
+      localStorage.setItem("todos", JSON.stringify(todos))
+    }
+  },[todos])
+
 
 
 
